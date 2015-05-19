@@ -2,20 +2,24 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
-    border-bottom: 1px solid $grey-color-light;
-    min-height: 56px;
+    min-height: 65px;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
+.site-header > .wrapper {
+    padding: 20px;
+}
 .site-title {
-    font-size: 26px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #505050;
+    vertical-align: middle;
     line-height: 56px;
-    letter-spacing: -1px;
     margin-bottom: 0;
     float: left;
+    letter-spacing: -1px;
 
     &,
     &:visited {
@@ -25,7 +29,7 @@
 
 .site-nav {
     float: right;
-    line-height: 56px;
+     line-height: 56px;
 
     .menu-icon {
         display: none;
@@ -34,11 +38,13 @@
     .page-link {
         color: $text-color;
         line-height: $base-line-height;
+        font-size: 13px;
 
+        /*
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
             margin-left: 20px;
-        }
+        }*/
     }
 
     @include media-query($on-palm) {
@@ -91,8 +97,32 @@
 /**
  * Site footer
  */
-.site-footer {
+
+.footer-text{
+    font-size: 14px;
+    color: #777;
+}
+
+#heart{
+    color: red;
+    font-weight: 600;
+}
+
+#left{
+    float: left;
+}
+
+#right{
+    float: right;
+}
+
+.border{
+    margin: auto;
+    padding: 5px;
     border-top: 1px solid $grey-color-light;
+    width: 50%;
+}
+.site-footer {
     padding: $spacing-unit 0;
 }
 
@@ -186,6 +216,7 @@
 .post-link {
     display: block;
     font-size: 24px;
+    font-weight:700;
 }
 
 
@@ -198,7 +229,7 @@
 }
 
 .post-title {
-    font-size: 42px;
+    font-size: 32px;
     letter-spacing: -1px;
     line-height: 1;
 
@@ -211,7 +242,7 @@
     margin-bottom: $spacing-unit;
 
     h2 {
-        font-size: 32px;
+        font-size: 28px;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -219,7 +250,7 @@
     }
 
     h3 {
-        font-size: 26px;
+        font-size: 24px;
 
         @include media-query($on-laptop) {
             font-size: 22px;
