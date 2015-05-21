@@ -25,7 +25,12 @@
 .page-link {
         color: $text-color;
         line-height: $base-line-height;
-        font-size: 14px;
+        font-size: 13px;
+        font-family: 'Source Sans Pro', sans-serif;
+        font-weight: 600;
+        letter-spacing: .15em;
+        text-align: center;
+
 
         // Gaps between nav items, but not on the first one
         &:not(:first-child) {
@@ -117,8 +122,13 @@
  */
 
 .footer-text{
-    font-size: 14px;
-    color: #777;
+    display: table;
+    margin: auto;
+    font-size: 13px;
+    font-family: 'Source Sans Pro', sans-serif;
+    letter-spacing: .1em;
+    color: #999999;
+    text-transform: uppercase;
 }
 
 #heart{
