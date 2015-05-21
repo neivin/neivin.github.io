@@ -12,27 +12,42 @@
     padding: 20px;
 }
 .site-title {
-    font-size: 30px;
-    font-weight: 600;
-    color: #505050;
-    vertical-align: middle;
-    line-height: 60px;
-    margin-bottom: 0;
-    float: left;
-    letter-spacing: -1px;
-
-    &,
-    &:visited {
-        color: $grey-color-dark;
-    }
+    display: table;
+    margin: auto;
+    padding-bottom: 10px;
 }
 
 #logo{
-    height: 30px;
+    height: 80px;
+    padding: 10px;
+}
+
+.page-link {
+        color: $text-color;
+        line-height: $base-line-height;
+        font-size: 14px;
+
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 40px;
+        }
+
+        &:visited {
+        color: $text-color;
+        }
+
+        &:hover{
+            color: $brand-color;
+        }
+    }
+
+.nav-links{
+    display: table;
+    margin: auto;
 }
 
 .site-nav {
-    float: right;
+     
      line-height: 60px;
 
     .menu-icon {
