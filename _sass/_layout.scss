@@ -26,7 +26,7 @@
         color: $text-color;
         line-height: $base-line-height;
         font-size: 13px;
-        font-family: 'Source Sans Pro', sans-serif;
+        font-family: $base-font-family;
         font-weight: 600;
         letter-spacing: .15em;
         text-align: center;
@@ -52,7 +52,7 @@
 }
 
 .site-nav {
-     
+
      line-height: 60px;
 
     .menu-icon {
@@ -125,7 +125,7 @@
     display: table;
     margin: auto;
     font-size: 13px;
-    font-family: 'Source Sans Pro', sans-serif;
+    font-family: $base-font-family;
     letter-spacing: .1em;
     color: #999999;
     text-transform: uppercase;
