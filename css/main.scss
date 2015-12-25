@@ -7,13 +7,13 @@
 
 // Our variables
 $base-font-family:'Montserrat', Arial, sans-serif;
-$base-font-size:   16px;
+$base-font-size:   18px;
 
-$body-copy: Georgia, serif;
+$body-copy: Times New Roman, serif;
 $body-font-size: 20px;
 
 $sub-font: 'Open Sans', Arial, sans-serif;
-$sub-font-size: 14px;
+$sub-font-size: 15px;
 
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
@@ -21,7 +21,7 @@ $base-line-height: 1.6;
 $spacing-unit:     30px;
 
 $text-color:       #444444;
-$title-color:	     #444444;
+$title-color:	    #444444;
 $background-color: #fefefe;
 $brand-color:      #1BA698;
 $brand-light:      lighten($brand-color, 10%);

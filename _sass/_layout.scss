@@ -44,6 +44,7 @@
 .smico{
     opacity: 0.5;
     display: inline-block;
+    padding-left: 10px;
     width: 20px;
     height: 20px;
 
@@ -58,8 +59,9 @@
 
 .page-link {
         color: $text-color;
+        opacity: 0.6;
         line-height: $base-line-height *2;
-        font-size: 0.7em;
+        font-size: 0.8em;
         font-family: $base-font-family;
         font-weight: 300;
         letter-spacing: .1em;
@@ -72,10 +74,12 @@
         }
 
         &:visited {
-        color: $text-color;
+            opacity: 1;
+            color: $text-color;
         }
 
         &:hover{
+            opacity: 1;
             color: $brand-color;
         }
     }
