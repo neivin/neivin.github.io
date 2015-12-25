@@ -20,11 +20,14 @@
 
 .header-name{
     font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+    font-size: 2.2em;
     font-weight: 700;
     letter-spacing: 0.12em;
     line-height: 0.7;
 }
+
+
+
 
 #title-link{
     color: $text-color;
@@ -47,7 +50,7 @@
 .page-link {
         color: $text-color;
         line-height: $base-line-height *2;
-        font-size: 15px;
+        font-size: 0.7em;
         font-family: $base-font-family;
         font-weight: 300;
         letter-spacing: .1em;
@@ -72,6 +75,36 @@
     display: table;
     padding: 3px;
     //margin: auto;
+}
+
+@media screen and (max-width: 500px) {
+    .header-name{
+        font-size: 1.7em;
+    }
+
+    .page-link{
+        font-size: 0.6em;
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 35px;
+        }
+
+    }
+}
+
+@media screen and (max-width: 390px) {
+    .header-name{
+        font-size: 1.4em;
+    }
+
+    .page-link{
+        font-size: 0.55em;
+        // Gaps between nav items, but not on the first one
+        &:not(:first-child) {
+            margin-left: 24px;
+        }
+
+    }
 }
 
 .site-nav {

@@ -18,7 +18,7 @@ In C:
 #include <stdio.h>
 
 int main(int argc, const char* argv[]){
-	printf("Hello, world!");
+	printf("Hello, world!\n");
 	return 0;	
 }
 {% endhighlight %}
@@ -34,6 +34,6 @@ class HelloWorld{
 
 In Python:
 {% highlight python %}
-def helloWorld:
+def helloWorld():
 	print ('Hello, world!')
 {% endhighlight %}
