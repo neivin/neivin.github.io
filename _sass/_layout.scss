@@ -41,9 +41,19 @@
 
 }
 
+.smico{
+    opacity: 0.5;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
 #logo{
     height: 45px;
-
 }
 
 .page-link {
