@@ -13,9 +13,8 @@
     padding-bottom: 3rem;
 }
 .site-title {
-    display: table;
-    margin: auto;
-    padding-bottom: 10px;
+    position: absolute;
+    left: 50%;
 }
 
 .header-name{
@@ -79,7 +78,7 @@
 
 @media screen and (max-width: 500px) {
     .header-name{
-        font-size: 1.7em;
+        font-size: 2em;
     }
 
     .page-link{
@@ -90,11 +89,15 @@
         }
 
     }
+
+    body{
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 390px) {
     .header-name{
-        font-size: 1.4em;
+        font-size: 1.65em;
     }
 
     .page-link{
@@ -103,7 +106,10 @@
         &:not(:first-child) {
             margin-left: 24px;
         }
+    }
 
+    .bot{
+        font-size: 12px !important;
     }
 }
 
@@ -176,6 +182,14 @@
 /**
  * Site footer
  */
+
+.leftfl{
+    float:left;
+}
+
+.rightfl{
+    float: right;
+}
 
 .footer-text{
     display: table;
