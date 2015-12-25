@@ -9,7 +9,8 @@
 }
 
 .site-header > .wrapper {
-    padding: 20px;
+    padding-top: 5rem;
+    padding-bottom: 3rem;
 }
 .site-title {
     display: table;
@@ -17,18 +18,39 @@
     padding-bottom: 10px;
 }
 
+.header-name{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: 0.12em;
+    line-height: 0.7;
+}
+
+#title-link{
+    color: $text-color;
+
+    &:visited {
+        color: $text-color;
+    }
+
+    &:hover {
+        color: $text-color;
+    }
+
+}
+
 #logo{
-    height: 80px;
-    padding: 10px;
+    height: 45px;
+
 }
 
 .page-link {
         color: $text-color;
-        line-height: $base-line-height;
-        font-size: 13px;
+        line-height: $base-line-height *2;
+        font-size: 15px;
         font-family: $base-font-family;
-        font-weight: 500;
-        letter-spacing: .15em;
+        font-weight: 300;
+        letter-spacing: .1em;
         text-align: center;
 
 
@@ -48,7 +70,8 @@
 
 .nav-links{
     display: table;
-    margin: auto;
+    padding: 3px;
+    //margin: auto;
 }
 
 .site-nav {
@@ -133,7 +156,6 @@
 
 #heart{
     color: red;
-    font-weight: 600;
 }
 
 #left{
@@ -151,6 +173,7 @@
     width: 50%;
 }
 .site-footer {
+    margin-top: 4rem;
     padding: $spacing-unit 0;
 }
 
@@ -237,7 +260,8 @@
 }
 
 .post-meta {
-    font-size: $small-font-size;
+    font-family: $sub-font;
+    font-size: $sub-font-size;
     color: $grey-color;
 }
 
@@ -257,7 +281,9 @@
 }
 
 .post-title {
+    font-family: $base-font-family;
     font-size: 32px;
+    font-weight: 400;
     letter-spacing: -1px;
     line-height: 1;
 
