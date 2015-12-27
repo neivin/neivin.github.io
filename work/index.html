@@ -9,8 +9,13 @@ title: Projects
 			<a href="{{ proj.url }}">
 			<span class="post-title">{{ proj.name }}</span>
 			</a>
-			<span class="post-meta">{{ proj.desc }}</span>
-			<a href="{{ proj.url }}"><div class="post-meta">{{proj.avail}}</div></a>
+
+			{% if proj.avail %}
+			<a class="post-title" href="{{ proj.url }}"><img alt="Github" class="smico" src="/images/github_icon.png"/></a>
+			{% endif %}
+
+			<div class="post-meta desc">{{ proj.desc }}</div>	
+
 			<article class="post-content">
 			    {{ proj.content }}
 			</article>

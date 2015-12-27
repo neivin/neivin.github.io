@@ -1,7 +1,7 @@
 ---
 name: Codemon Trainer
 desc: Desktop Application in C / Java
-avail: Unavailable due to Academic Integrity restrictions
+avail:
 url:
 ---
 
