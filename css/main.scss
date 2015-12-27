@@ -9,19 +9,19 @@
 $base-font-family:'Montserrat', Arial, sans-serif;
 $base-font-size:   18px;
 
-$body-copy: Times New Roman, serif;
-$body-font-size: 20px;
+$body-copy: ‘Palatino Linotype’, ‘Book Antiqua’, Palatino, serif;
+$body-font-size: 19px;
 
 $sub-font: 'Open Sans', Arial, sans-serif;
-$sub-font-size: 15px;
+$sub-font-size: 16px;
 
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #444444;
-$title-color:	    #444444;
+$text-color:       #555;
+$title-color:	    #555;
 $background-color: #fefefe;
 $brand-color:      #1BA698;
 $brand-light:      lighten($brand-color, 10%);

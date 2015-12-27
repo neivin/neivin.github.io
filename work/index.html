@@ -1,0 +1,20 @@
+---
+layout: default
+title: Projects
+---
+
+<ul class="post-list">
+	{% for proj in site.projects%}
+		<li>
+			<a href="{{ proj.url }}">
+			<span class="post-title">{{ proj.name }}</span>
+			</a>
+			<span class="post-meta">{{ proj.desc }}</span>
+			<a href="{{ proj.url }}"><div class="post-meta">{{proj.avail}}</div></a>
+			<article class="post-content">
+			    {{ proj.content }}
+			</article>
+		</li>
+	{% endfor %}
+	
+</ul>
