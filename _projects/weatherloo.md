@@ -2,7 +2,7 @@
 name: Weatherloo
 desc: Google Chrome Extension
 avail: github.com/neivin/weatherloo
-url: https://github.com/neivin/weatherloo
+link: https://github.com/neivin/weatherloo
 
 ---
 

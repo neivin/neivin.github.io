@@ -6,12 +6,12 @@ title: Projects
 <ul class="post-list">
 	{% for proj in site.projects%}
 		<li>
-			<a href="{{ proj.url }}">
+			<a href="{{ proj.link }}">
 			<span class="post-title">{{ proj.name }}</span>
 			</a>
 
 			{% if proj.avail %}
-			<a class="post-title" href="{{ proj.url }}"><img alt="Github" class="smico" src="/images/github_icon.png"/></a>
+			<a class="post-title" href="{{ proj.link }}"><img alt="Github" class="smico" src="/images/github_icon.png"/></a>
 			{% endif %}
 
 			<div class="post-meta desc">{{ proj.desc }}</div>	
