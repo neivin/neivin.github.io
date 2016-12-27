@@ -4,7 +4,8 @@ title: Projects
 ---
 
 <ul class="post-list">
-	{% for proj in site.projects%}
+	{% assign projlist = site.projects | sort: 'date' %}
+	{% for proj in projlist%}
 		<li>
 			<a href="{{ proj.link }}">
 			<span class="post-title">{{ proj.name }}</span>
