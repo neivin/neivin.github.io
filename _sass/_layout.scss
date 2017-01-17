@@ -2,15 +2,17 @@
  * Site header
  */
 .site-header {
+    background-color: $dark-grey;
     min-height: 65px;
+    margin-bottom: 2rem;
 
     // Positioning context for the mobile navigation icon
     position: relative;
 }
 
 .site-header > .wrapper {
-    padding-top: 5rem;
-    padding-bottom: 3rem;
+    padding-top: 2rem;
+    padding-bottom: 0.75rem;
 }
 .site-title {
     position: absolute;
@@ -18,22 +20,25 @@
 }
 
 .header-name{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 2.2em;
-    font-weight: 700;
+    font-family: $base-font-family;
+    font-size: 1.5em;
+    font-weight: bold;
     line-height: 0.7;
+    letter-spacing: 0.01em;
+    display: inline-block;
+    width: 62%;
 }
 
 
 #title-link{
-    color: $text-color;
-
+    color: $background-color;
+ 
     &:visited {
-        color: $text-color;
+        color: $background-color;
     }
 
     &:hover {
-        color: $text-color;
+        color: $background-color;
     }
 
 }
@@ -43,14 +48,12 @@
     margin-bottom: 0.7rem;
 }
 
+/* social media icons */
 .smico{
     opacity: 0.5;
     display: inline-block;
     padding-left: 10px;
-    width: 20px;
-    height: 20px;
     vertical-align: middle;
-    margin-bottom: 4px;
 
     &:hover {
         opacity: 1;
@@ -62,10 +65,10 @@
 }
 
 .page-link {
-        color: $text-color;
+        color: $background-color;
         opacity: 0.6;
         line-height: $base-line-height *2;
-        font-size: 0.8em;
+        font-size: 1em;
         font-family: $base-font-family;
         font-weight: 300;
         text-align: center;
@@ -78,7 +81,7 @@
 
         &:visited {
             opacity: 1;
-            color: $text-color;
+            color: $background-color;
         }
 
         &:hover{
@@ -88,7 +91,8 @@
     }
 
 .nav-links{
-    display: table;
+    
+    display: inline-block;
     padding: 3px;
     //margin: auto;
 }

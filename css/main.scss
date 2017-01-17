@@ -6,13 +6,13 @@
 
 
 // Our variables
-$base-font-family:'Montserrat', Arial, sans-serif;
-$base-font-size:   18px;
+$base-font-family:'Roboto', Arial, sans-serif;
+$base-font-size:   19px;
 
-$body-copy: 'Lato', Arial, sans-serif;
+$body-copy: 'Roboto', Arial, sans-serif;
 $body-font-size: 19px;
 
-$sub-font: 'Lato', Arial, sans-serif;
+$sub-font: 'Roboto', Arial, sans-serif;
 $sub-font-size: 16px;
 
 $small-font-size:  $base-font-size * 0.875;
@@ -23,13 +23,14 @@ $spacing-unit:     30px;
 $text-color:       #222;
 $title-color:	   #222;
 $background-color: #fefefe;
-$brand-color:      #4245f4;
+$brand-color:      #2196F3;
 $brand-light:      lighten($brand-color, 10%);
 $brand-dark:       darken($brand-color, 10%);
 
 $grey-color:       #828282;
 $grey-color-light: lighten($grey-color, 40%);
 $grey-color-dark:  darken($grey-color, 25%);
+$dark-grey:			#202020;
 
 // Width of the content area
 $content-width:    800px;
