@@ -24,7 +24,6 @@
     font-size: 1.5em;
     font-weight: bold;
     line-height: 0.7;
-    letter-spacing: 0.01em;
     display: inline-block;
     width: 62%;
 }
@@ -74,7 +73,7 @@
         line-height: $base-line-height *2;
         font-size: 1em;
         font-family: $base-font-family;
-        font-weight: 300;
+        font-weight: bold;
         text-align: center;
 
 
@@ -355,7 +354,7 @@
 
 .post-title {
     font-family: $base-font-family;
-    font-size: 1.5em;
+    font-size: 1.2em;
     font-weight: 700;
     line-height: 1.2;
     margin-bottom: 0px;

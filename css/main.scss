@@ -6,14 +6,14 @@
 
 
 // Our variables
-$base-font-family:'Roboto', Arial, sans-serif;
+$base-font-family:'Source Sans Pro', Arial, sans-serif;
 $base-font-size:   19px;
 
 $body-copy: 'Source Sans Pro', Arial, sans-serif;
 $body-font-size: 19px;
 
-$sub-font: 'Roboto', Arial, sans-serif;
-$sub-font-size: 16px;
+$sub-font: 'Source Sans Pro', Arial, sans-serif;
+$sub-font-size: 15px;
 
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.6;
@@ -23,7 +23,7 @@ $spacing-unit:     30px;
 $text-color:       #222;
 $title-color:	   #222;
 $background-color: #fefefe;
-$brand-color:      #2196F3;
+$brand-color:      #03A9F4;
 $brand-light:      lighten($brand-color, 10%);
 $brand-dark:       darken($brand-color, 10%);
 
