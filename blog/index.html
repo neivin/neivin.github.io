@@ -4,17 +4,17 @@ layout: default
 
 <div class="home">
 
-  <ul class="post-list">
+  <table>
     {% for post in site.posts %}
-      <li>
-        
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+      <tr>
+       <td class="post-date"><span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span></td>
+       <td>
         <a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span class = "post-title">{{ post.title }}</span></a>
+	</td>
         
-      </li>
+      </tr>
     {% endfor %}
-  </ul>
-
+</table>
   <p class="rss-subscribe post-meta">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
 
 </div>

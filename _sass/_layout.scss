@@ -320,13 +320,10 @@
     font-size: 20px;
 }
 
-.post-list {
-    margin-left: 0;
-    list-style: none;
-
-    > li {
-        margin-bottom: $spacing-unit;
-    }
+.post-date {
+	text-align: right;
+	padding-top: $spacing-unit/2;
+	padding-bottom: $spacing-unit/2;
 }
 
 .post-meta {
