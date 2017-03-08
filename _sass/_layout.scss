@@ -334,10 +334,11 @@
     font-size: $sub-font-size;
     color: $grey-color;
     letter-spacing: 0.01rem;
+    padding-right: 1em;
 }
 
 .post-link {
-    display: block;
+    display: inline;
     font-size: 1em;
     font-weight:700;
 }
