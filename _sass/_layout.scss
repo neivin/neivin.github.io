@@ -1,31 +1,31 @@
 /**
  * Site header
  */
-.site-header {
+header {
     background-color: $dark-grey;
-    min-height: 65px;
-    margin-bottom: 2rem;
-
-    // Positioning context for the mobile navigation icon
+    padding-top: 12px;
+    padding-bottom: 12px;
     position: relative;
+    vertical-align: middle;
 }
 
-.site-header > .wrapper {
-    padding-top: 2rem;
-    padding-bottom: 0.75rem;
+header > .wrapper {
 }
+
 .site-title {
     position: absolute;
     left: 50%;
 }
 
 .header-name{
+    vertical-align: middle;
+    float: left;
     font-family: $base-font-family;
     font-size: 1.5em;
     font-weight: bold;
-    line-height: 0.7;
+    line-height: 1;
+    letter-spacing: -0.025rem;
     display: inline-block;
-    width: 62%;
 }
 
 #fname {
@@ -69,17 +69,10 @@
 
 .page-link {
         color: $background-color;
-        opacity: 0.6;
-        line-height: $base-line-height *2;
         font-size: 1em;
         font-family: $base-font-family;
         text-align: center;
 
-
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 40px;
-        }
 
         &:visited {
             opacity: 1;
@@ -93,25 +86,32 @@
     }
 
 .nav-links{
-    
+    list-style: none;
+    float: right; 
     display: inline-block;
-    padding: 3px;
+    margin-bottom: 0px;
+    overflow: hidden;
+    margin-left: 0px;
     //margin: auto;
 }
 
-@media screen and (max-width: 500px) {
+.nav-links > li {
+    vertical-align: middle;
+    float: left;
+    margin: 0 24px 0 0;
+}
+
+@media screen and (max-width: 540px) {
+
+    .nav-links{
+        float:none;
+    }
     .header-name{
         font-size: 2em;
+        float: none;
     }
 
-    .page-link{
-        font-size: 0.9rem;
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 25px;
-        }
 
-    }
 
     body{
         font-size: 17px;
@@ -123,13 +123,21 @@
         font-size: 1.65em;
     }
 
-    .page-link{
-        font-size: 0.7em;
-        // Gaps between nav items, but not on the first one
-        &:not(:first-child) {
-            margin-left: 15px;
-        }
+
+    .bot{
+        font-size: 12px !important;
     }
+}
+
+@media screen and (max-width: 330px) {
+    .header-name{
+        font-size: 1.4em;
+    }
+
+    .nav-links{
+        font-size: 0.8em;
+    }
+
 
     .bot{
         font-size: 12px !important;
