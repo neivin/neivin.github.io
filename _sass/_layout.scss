@@ -1,7 +1,7 @@
 /**
  * Site header
  */
-header {
+.site-header {
     background-color: $dark-grey;
     padding-top: 12px;
     padding-bottom: 12px;
@@ -9,7 +9,7 @@ header {
     vertical-align: middle;
 }
 
-header > .wrapper {
+.site-header > .wrapper {
 }
 
 .site-title {
