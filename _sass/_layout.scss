@@ -2,38 +2,46 @@
  * Site header
  */
 .site-header {
-    background-color: $dark-grey;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    padding: 36px 12px;
     position: relative;
     vertical-align: middle;
 }
 
 .site-header > .wrapper {
+    text-align: center;
 }
 
-.site-title {
-    position: absolute;
-    left: 50%;
+.author{
+    display: block;
 }
 
-.header-name{
-    vertical-align: middle;
-    float: left;
-    font-family: $base-font-family;
-    font-size: 1.5em;
-    font-weight: bold;
-    line-height: 1;
-    letter-spacing: -0.025rem;
+.author-portrait{
     display: inline-block;
+    border-radius: 100%;
+    height: 80px;
+    width: 80px;
+    margin-bottom: 1.5rem;
 }
 
-#fname {
-    font-weight: 300;
+.author-name{
+    font-size: $body-font-size*1.3;
+    font-weight: 400;
+    letter-spacing: 0em;
+    margin: 0px;
+    line-height: 1;
+
+}
+
+.author-bio{
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $grey-color-light;
+    font-size: $sub-font-size;
+    font-weight: bold;
 }
 
 
-#title-link{
+#author-link{
     color: $background-color;
  
     &:visited {
@@ -68,15 +76,19 @@
 }
 
 .page-link {
-        color: $background-color;
-        font-size: 1em;
+        padding: 0px 1.5rem;
+        text-transform: uppercase;
+        font-size: $sub-font-size;
         font-family: $base-font-family;
+        letter-spacing: 0.1em;
         text-align: center;
+        font-weight: bold;
+        color: $grey-color-light;
 
 
         &:visited {
+            color: $grey-color-light;
             opacity: 1;
-            color: $background-color;
         }
 
         &:hover{
@@ -232,8 +244,14 @@
     text-transform: uppercase;
 }
 
-#heart{
-    color: red;
+.icon{
+    margin: 4rem 0rem;
+    text-align: center;
+    color: $grey-color-light;
+
+    img{
+        height: 25px;
+    }
 }
 
 #left{
@@ -251,7 +269,6 @@
     width: 50%;
 }
 .site-footer {
-    margin-top: 4rem;
     padding: $spacing-unit 0;
 }
 
@@ -336,16 +353,16 @@
 
 .post-meta {
     font-family: $sub-font;
-    font-size: $sub-font-size;
-    color: $grey-color;
-    letter-spacing: 0.01rem;
     padding-right: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $grey-color;
+    font-size: $sub-font-size
 }
 
 .post-link {
     display: inline;
     font-size: 1em;
-    font-weight:700;
 }
 
 
@@ -355,13 +372,13 @@
  */
 .post-header {
     margin-bottom: $spacing-unit;
+    text-align: center;
 }
 
 .post-title {
     font-family: $base-font-family;
-    font-size: 1.2em;
-    font-weight: 700;
-    line-height: 1.2;
+    font-size: 1.5em;
+    line-height: 1.6;
     margin-bottom: 0px;
 
     @include media-query($on-laptop) {
