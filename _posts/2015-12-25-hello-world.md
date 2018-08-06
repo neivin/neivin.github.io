@@ -3,6 +3,7 @@ layout: post
 title: "Hello, world!"
 date: 2015-12-25 19:06:00
 categories: thoughts
+blurb: My first post on this blog!
 ---
 
 Hello, world!

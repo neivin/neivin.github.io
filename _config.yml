@@ -12,3 +12,6 @@ markdown: kramdown
 
 collections:
 - projects
+
+plugins:
+- jekyll-paginate
