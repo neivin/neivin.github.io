@@ -2,7 +2,6 @@
 layout: post
 title: "Bash in real life"
 date: 2017-03-07 19:29:00
-categories: thoughts bash dev scripting
 ---
 
 A few days ago I was trying to download a bunch of images off of some website listing the best jazz and blues albums of the last 100 years.

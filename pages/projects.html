@@ -1,18 +1,17 @@
 ---
-layout: default
+layout: page
 title: Projects
+permalink: /pages/projects/
 ---
 
 <ul class="post-list">
 	{% assign projlist = site.projects | sort: 'date'| reverse %}
 	{% for proj in projlist%}
 		<li>
-			<a href="{{ proj.link }}">
-			<span class="post-title">{{ proj.name }}</span>
-			</a>
+			<h1><a href="{{ proj.link }}">{{ proj.name }}</a><h1>
 
 			{% if proj.avail %}
-			<a class="post-title" href="{{ proj.link }}"><img alt="Github" class="smico" src="/images/github_icon.png"/></a>
+			<a href="{{ proj.link }}"><img alt="Github" class="smico" src="/images/github_icon.png"/></a>
 			{% endif %}
 
 			<div class="post-meta desc">{{ proj.desc }}</div>	
