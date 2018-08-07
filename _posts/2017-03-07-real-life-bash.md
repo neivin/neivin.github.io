@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Real Life Bash"
+title: "Bash in real life"
 date: 2017-03-07 19:29:00
 categories: thoughts bash dev scripting
 ---
