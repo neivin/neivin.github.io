@@ -3,26 +3,32 @@
 ---
 @charset "utf-8";
 
+// Global base values
+$base-font-family: 'Lato', Arial, sans-serif;
+$base-font-size: 1.08em;
+$base-line-height: 1.7;
+$base-font-weight: 300;
+$base-letter-spacing: 0.02em;
+$base-text-color: #4c555a;
 
+// Title properties
+$title-font-family: 'Merriweather', 'Times New Roman', serif;
+$title-font-size: 3.5em;
+$title-font-weight: 700;
+$title-letter-spacing: -$base-letter-spacing;
+$title-color: #292e31;
 
-// Our variables
-$base-font-family:'Roboto', Arial, sans-serif;
-$base-font-size:   19px;
+$body-font-family: $base-font-family;
+$body-font-size: $base-font-size;
 
-$body-copy: 'Roboto', Arial, sans-serif;
-$body-font-size: 18px;
-
-$sub-font: 'Roboto', Arial, sans-serif;
+$sub-font: $base-font-family;
 $sub-font-size: 13px;
 
 $small-font-size:  $base-font-size * 0.875;
-$base-line-height: 1.6;
 
 $spacing-unit:     30px;
 
-$text-color:       #111;
-$title-color:	   #222;
-$background-color: #fefefe;
+$background-color: #ffffff;
 $brand-color:      #03A9F4;
 $brand-light:      lighten($brand-color, 10%);
 $brand-dark:       darken($brand-color, 10%);
