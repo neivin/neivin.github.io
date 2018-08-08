@@ -2,20 +2,26 @@
 layout: default
 ---
 
-<div class="home">
+{% for post in paginator.posts %}
+<h1 class="post-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+<p class="post-meta">{{ post.date | date: "%B %-d, %Y" }}</p>
+<div class="content">
+  {{ post.content }}
+</div>
+<br/>
+{% endfor %}
 
-  <table>
-    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
-    {% for year in postsByYear %}
-      <tr><td class="post-title">{{ year.name }}</td></tr>
-        {% for post in year.items %}
-          <tr>
-            <td class="post-date"><span class="post-meta">{{ post.date | date: "%m/%d" }}</span></td>
-            <td><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><span class = "post-title">{{ post.title }}</span></a></td>
-          </tr>
-        {% endfor %}
-    {% endfor %}
-</table>
-  <p class="rss-subscribe post-meta">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!-- Pagination links -->
+<div class="pagination">
+{% if paginator.previous_page %}
+  <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
+{% else %}
+  <span class="previous">Previous</span>
+{% endif %}
+<span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+{% if paginator.next_page %}
+  <a href="{{ paginator.next_page_path }}" class="next">Next</a>
+{% else %}
+  <span class="next ">Next</span>
+{% endif %}
 </div>
