@@ -4,7 +4,7 @@
 @charset "utf-8";
 
 // Global base values
-$base-font-family: 'Lato', Arial, sans-serif;
+$base-font-family: 'Lato', 'Helvetica', sans-serif;
 $base-font-size: 1.08em;
 $base-line-height: 1.7;
 $base-font-weight: 300;
@@ -12,10 +12,10 @@ $base-letter-spacing: 0.03em;
 $base-text-color: #4c555a;
 
 // Title properties
-$title-font-family: 'Merriweather', 'Times New Roman', serif;
-$title-font-size: 3.5em;
-$title-font-weight: 700;
-$title-letter-spacing: -$base-letter-spacing;
+$title-font-family: 'Open Sans', 'Helvetica', sans-serif;
+$title-font-size: 3em;
+$title-font-weight: 800;
+$title-letter-spacing: -$base-letter-spacing * 1.5;
 $title-color: #292e31;
 
 $body-font-family: $base-font-family;
