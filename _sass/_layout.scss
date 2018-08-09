@@ -21,18 +21,9 @@
     line-height: 1;
 }
 
-.author-bio{
-    text-transform: uppercase;
-    letter-spacing: 0.1em;
-    color: $grey-color-light;
-    font-size: $sub-font-size;
-    font-weight: bold;
-}
-
-
 #author-link{
     color: $background-color;
- 
+
     &:visited {
         color: $background-color;
     }
@@ -44,7 +35,6 @@
 }
 
 .desc{
-    font-style: italic;
     margin-bottom: 0.7rem;
 }
 
@@ -71,11 +61,10 @@
         font-family: $base-font-family;
         letter-spacing: 0.1em;
         text-align: center;
-        color: $grey-color-light;
-
+        color: $base-text-color;
 
         &:visited {
-            color: $grey-color-light;
+            color: $base-text-color;
             opacity: 1;
         }
 
@@ -84,22 +73,6 @@
             color: $brand-color;
         }
     }
-
-.nav-links{
-    list-style: none;
-    float: right; 
-    display: inline-block;
-    margin-bottom: 0px;
-    overflow: hidden;
-    margin-left: 0px;
-    //margin: auto;
-}
-
-.nav-links > li {
-    vertical-align: middle;
-    float: left;
-    margin: 0 24px 0 0;
-}
 
 @media screen and (max-width: 540px) {
 
@@ -233,7 +206,7 @@
 }
 
 .icon{
-    margin: 4rem 0rem;
+    margin: 2rem 0rem;
     text-align: center;
     color: $grey-color-light;
 
@@ -242,19 +215,11 @@
     }
 }
 
-#left{
-    float: left;
-}
-
-#right{
-    float: right;
-}
-
 .border{
     margin: auto;
     padding: 5px;
     border-top: 1px solid $grey-color-light;
-    width: 50%;
+    width: 75%;
 }
 .site-footer {
     padding: $spacing-unit 0;
@@ -321,10 +286,8 @@
 }
 
 
+// Page content
 
-/**
- * Page content
- */
 .page-content {
     padding: $spacing-unit 0;
 }
@@ -353,6 +316,9 @@
     font-size: 1em;
 }
 
+.post-separator {
+    padding-top: 2rem;
+}
 
 
 /**
@@ -370,6 +336,11 @@
     font-weight: $title-font-weight;
     line-height: 1.6;
     margin-bottom: 0px;
+    color: $title-color;
+
+    a {
+        color: inherit;
+    }
 
     @include media-query($on-laptop) {
         font-size: 36px;
@@ -401,5 +372,31 @@
         @include media-query($on-laptop) {
             font-size: 18px;
         }
+    }
+}
+
+// Pagination
+
+.pagination {
+    text-align: center;
+    font-family: $sub-font;
+    padding-right: 1em;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    color: $grey-color;
+    font-size: $sub-font-size;
+
+    .hide {
+        display: none;
+    }
+
+    .previous {
+        float: left;
+        font-family: inherit;
+    }
+
+    .next {
+        float: right;
+        font-family: inherit;
     }
 }
