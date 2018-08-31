@@ -1,0 +1,14 @@
+---
+layout: page
+title: Projects
+permalink: /pages/projects/
+---
+
+{% assign projlist = site.projects | sort: 'date'| reverse %}
+{% for proj in projlist%}
+	<h1 class="sm-margin"><a href="{{ proj.link }}">{{ proj.name }}</a></h1>
+	<div class="post-meta desc">{{ proj.desc }}</div>
+	<article class="post-content">
+	    {{ proj.content }}
+	</article>
+{% endfor %}

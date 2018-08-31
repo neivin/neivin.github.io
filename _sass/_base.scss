@@ -15,12 +15,12 @@ dl, dd, ol, ul, figure {
  */
 body {
     min-width: 320px;
-    font-family: $body-copy;
+    font-family: $body-font-family;
     font-size: $body-font-size;
     line-height: $base-line-height;
-    letter-spacing: 0.02em;
-    font-weight: 300;
-    color: $text-color;
+    letter-spacing: $base-letter-spacing;
+    font-weight: $base-font-weight;
+    color: $base-text-color;
     background-color: $background-color;
     -webkit-text-size-adjust: 100%;
 }
@@ -40,6 +40,7 @@ ul, ol, dl, figure,
 p{
     margin-bottom: $spacing-unit - 10;
 }
+
 
 
 /**
@@ -72,21 +73,28 @@ ul, ol {
     margin-left: $spacing-unit;
 }
 
-li {
-    > ul,
-    > ol {
-         margin-bottom: 0;
-    }
-}
+  li {
+      > ul,
+      > ol {
+           margin-bottom: 0;
+      }
+  }
 
 
 
-/**
- * Headings
- */
-h1, h2, h3, h4, h5, h6 {
-    font-weight: 400;
-}
+  /**
+   * Headings
+   */
+  h1, h2, h3, h4, h5, h6 {
+      padding-top: 1rem;
+      font-family: $title-font-family;
+      font-weight: $title-font-weight;
+      letter-spacing: $title-letter-spacing;
+  }
+
+  .sm-margin {
+    margin-bottom: 0px;
+  }
 
 
 
@@ -134,7 +142,7 @@ code {
     font-size: 15px;
     border: 1px solid $grey-color-light;
     border-radius: 3px;
-    background-color: #eef;
+    background-color: #eeeeee;
 }
 
 code {

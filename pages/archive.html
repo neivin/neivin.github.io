@@ -1,0 +1,20 @@
+---
+layout: page
+title: Archive
+---
+    {% assign postsByYear = site.posts | group_by_exp:"post", "post.date | date: '%Y'" %}
+    {% for year in postsByYear %}
+      <h2 class="post-title">{{ year.name }}</h2>
+        <table>
+        {% for post in year.items %}
+          <tr>
+            <td class="post-date"><span class="post-meta">{{ post.date | date: "%b %d" }}</span></td>
+            <td><a class="post-link" href="{{ post.url | prepend: site.baseurl }}"><h3>{{ post.title }}</h3></a></td>
+          </tr>
+        {% endfor %}
+      </table>
+    {% endfor %}
+
+
+    <div class="post-separator"></div>
+    <p class="rss-subscribe post-meta">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
