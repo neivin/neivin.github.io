@@ -331,7 +331,7 @@
 
 .post-title {
     font-family: $title-font-family;
-    font-size: $title-font-size;
+    font-size: $title-font-size * 1.1;
     letter-spacing: $title-letter-spacing;
     font-weight: $title-font-weight;
     line-height: 1.6;
@@ -350,24 +350,24 @@
 .post-content {
     margin-bottom: $spacing-unit;
 
-    h2 {
-        font-size: 28px;
+    h1 {
+        font-size: $title-font-size * 0.75;
 
         @include media-query($on-laptop) {
             font-size: 28px;
         }
     }
 
-    h3 {
-        font-size: 24px;
+    h2 {
+        font-size: $title-font-size * 0.55;
 
         @include media-query($on-laptop) {
             font-size: 22px;
         }
     }
 
-    h4 {
-        font-size: 20px;
+    h3 {
+        font-size: $title-font-size * 0.4;
 
         @include media-query($on-laptop) {
             font-size: 18px;
