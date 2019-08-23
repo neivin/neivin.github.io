@@ -4,16 +4,16 @@
 @charset "utf-8";
 
 // Global base values
-$base-font-family: 'Lato', 'Helvetica', sans-serif;
-$base-font-size: 1.08em;
-$base-line-height: 1.7;
+$base-font-family: 'Lato', sans-serif;
+$base-font-size: 1.05em;
+$base-line-height: 1.9;
 $base-font-weight: 300;
 $base-letter-spacing: 0.03em;
 $base-text-color: #444d51;
 
 // Title properties
-$title-font-family: 'Open Sans', 'Helvetica', sans-serif;
-$title-font-size: 2.2em;
+$title-font-family: $base-font-family;
+$title-font-size: 1.9em;
 $title-font-weight: 600;
 $title-letter-spacing: -$base-letter-spacing * 1.5;
 $title-color: #292e31;
@@ -22,25 +22,24 @@ $body-font-family: $base-font-family;
 $body-font-size: $base-font-size;
 
 $sub-font: $base-font-family;
-$sub-font-size: 13px;
+$sub-font-size: $base-font-size * 0.7;
 
 $small-font-size:  $base-font-size * 0.875;
 
-$spacing-unit:     30px;
+$spacing-unit: 30px;
 
 $background-color: #ffffff;
-$brand-color:      #03A9F4;
-$brand-light:      lighten($brand-color, 10%);
-$brand-dark:       darken($brand-color, 10%);
+$brand-color: #03A9F4;
+$brand-light: lighten($brand-color, 10%);
+$brand-dark: darken($brand-color, 10%);
 
-$grey-color:       #828282;
+$grey-color: #828282;
 $grey-color-light: lighten($grey-color, 40%);
-$grey-color-dark:  darken($grey-color, 25%);
-$dark-grey:			#2A2C2E;
+$grey-color-dark: darken($grey-color, 25%);
+$dark-grey:	#2A2C2E;
 
 // Width of the content area
 $content-width:    800px;
-
 $on-palm:          600px;
 $on-laptop:        800px;
 

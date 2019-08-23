@@ -5,7 +5,7 @@ title: About me
 
 # Who am I?
 My name is Neivin Mathew.<br/>
-That's pronounced *nay-vin*, although I'll respond to any interpretation of it at this point.
+That's pronounced *nay-vin*, although I'll respond to any variation of it at this point.
 
 # What am I doing with my life?
 I'm currently a software engineer at [Stripe][0]. Before Stripe, I worked at a small company called [Index][1]. Index was acquired by Stripe in March 2018.
